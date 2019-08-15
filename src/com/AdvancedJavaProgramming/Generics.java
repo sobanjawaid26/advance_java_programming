@@ -9,6 +9,7 @@ public class Generics {
 		ArrayList l = new ArrayList();
 		l.add("A");
 		String name = (String) l.get(0);
+		l.add(1);  // NO ERROR
 		
 		/////////////////////////////////////////////////////////////////////////////////////////////////
 		
@@ -18,6 +19,7 @@ public class Generics {
 		ArrayList<String> ll = new ArrayList<String>();
 		ll.add("A");
 		String name1 =  ll.get(0);
+		// ll.add(2);   // ERROR : The method add(int, String) in the type ArrayList<String> is not applicable for the arguments (int)
 		
 	}
 }
